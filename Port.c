@@ -219,7 +219,7 @@ void Port_SetPinDirection( Port_PinType Pin, Port_PinDirectionType Direction )
     }
 
     /* Check if the used Pin is within the valid range */
-    if(Pin>PORT_CONFIGURED_PINS)
+    if(Pin>=PORT_CONFIGURED_PINS)
     {
         Det_ReportError(PORT_MODULE_ID, PORT_INSTANCE_ID,
                         PORT_SET_PIN_DIRECTION_SID, PORT_E_PARAM_PIN);
@@ -426,7 +426,7 @@ void Port_SetPinMode( Port_PinType Pin, Port_PinInitialModeType Mode )
     }
 
     /* Check if the used Pin is within the valid range */
-    if(Pin>PORT_CONFIGURED_PINS)
+    if(Pin>=PORT_CONFIGURED_PINS)
     {
         Det_ReportError(PORT_MODULE_ID, PORT_INSTANCE_ID,
                         PORT_SET_PIN_MODE_SID, PORT_E_PARAM_PIN);
