@@ -40,7 +40,7 @@
 #define PORT_SET_PIN_MODE_API                 (STD_ON)
 
 /* Number of PINS */
-#define PORT_CONFIGURED_PINS                   (38U)
+#define PORT_CONFIGURED_PINS                   (39U)
 
 
 
